@@ -1,0 +1,273 @@
+<!doctype html><html lang="fa" dir="rtl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#08090d"><meta name="description" content="Arshia Art — طراحی گرافیک، صفحه‌آرایی و هویت بصری."><title>Arshia Art | نسخه 3.9</title><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet"><style>
+:root{
+ --bg:#08090d;--bg-2:#0d0f15;--panel:#11141b;--panel-2:#151923;--lime:#c9ff55;--violet:#9d7bff;--pink:#ff79c6;
+ --text:#f7f7f2;--muted:#9da2af;--line:rgba(255,255,255,.11);--line-strong:rgba(255,255,255,.18);
+ --shadow:0 28px 90px rgba(0,0,0,.38);--radius:24px;--wrap:min(1180px,calc(100% - 36px));
+}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:90px}body{margin:0;background:var(--bg);color:var(--text);font-family:Vazirmatn,sans-serif;overflow-x:hidden;line-height:1.6}
+body:before{content:"";position:fixed;inset:0;pointer-events:none;background:radial-gradient(circle at 75% -10%,rgba(157,123,255,.15),transparent 28%),radial-gradient(circle at -5% 70%,rgba(201,255,85,.07),transparent 25%);z-index:-1}
+a{color:inherit;text-decoration:none}button,input,select{font:inherit}.wrap{width:var(--wrap);margin-inline:auto}
+.skip-link{position:fixed;top:10px;right:10px;z-index:100;padding:10px 14px;border-radius:12px;background:var(--lime);color:#10120d;transform:translateY(-150%);transition:.2s}.skip-link:focus{transform:none}
+.scroll-progress{position:fixed;top:0;right:0;height:3px;width:0;background:linear-gradient(90deg,var(--violet),var(--lime));z-index:101;box-shadow:0 0 16px rgba(201,255,85,.35)}
+.site-header{position:sticky;top:0;z-index:90;background:rgba(8,9,13,.72);backdrop-filter:blur(22px) saturate(140%);border-bottom:1px solid rgba(255,255,255,.08)}
+nav{height:76px;display:flex;align-items:center;justify-content:space-between;gap:20px}.brand{font-weight:900;display:flex;align-items:center;gap:10px;letter-spacing:.2px}.mark{background:var(--lime);color:#111;border-radius:12px;padding:6px 10px;font-size:19px;box-shadow:0 0 28px rgba(201,255,85,.15)}.brand small{display:block;color:#737987;font-size:8px;letter-spacing:2px;margin-top:1px}
+.links{display:flex;gap:25px;align-items:center;font-size:12px;color:#bfc3ce}.links a{position:relative;padding:9px 0;transition:.2s}.links a:after{content:"";position:absolute;right:0;bottom:2px;width:0;height:2px;background:var(--lime);transition:.25s}.links a:hover,.links a[aria-current="page"]{color:var(--lime)}.links a:hover:after,.links a[aria-current="page"]:after{width:100%}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;border:1px solid var(--line);border-radius:999px;padding:12px 19px;font-size:12px;font-weight:800;transition:transform .22s,border-color .22s,background .22s;cursor:pointer}.btn:hover{transform:translateY(-3px);border-color:var(--line-strong)}.btn:active{transform:translateY(-1px) scale(.99)}.primary{background:var(--lime);color:#111;border-color:var(--lime)}.menu{display:none;background:rgba(255,255,255,.05);color:white;border:1px solid var(--line);border-radius:12px;padding:8px 10px;cursor:pointer}
+.page-view{display:none!important}.page-view.current{display:block!important}.section{padding:92px 0}.page-view .section{padding-top:62px}.page-heading{padding:60px 0 8px}.kicker{font-size:10px;color:var(--lime);letter-spacing:2px;font-weight:800}.section-head{display:flex;justify-content:space-between;align-items:end;gap:30px;margin-bottom:34px}.section h2,.page-heading h2{font-size:clamp(31px,4vw,51px);line-height:1.35;letter-spacing:-1.2px;margin:10px 0}.section-head p,.hero p,.about p{color:var(--muted);line-height:2.05}.section-head p{max-width:450px;font-size:13px}
+.hero{min-height:650px;display:grid;grid-template-columns:1.03fr .97fr;align-items:center;gap:35px;padding:64px 0 55px;position:relative}.hero:before{content:"ARSHIA / 3.8";position:absolute;top:28px;left:0;color:#444a56;font-size:9px;letter-spacing:2px}.pill{display:inline-flex;align-items:center;gap:9px;border:1px solid rgba(201,255,85,.25);color:var(--lime);padding:8px 13px;border-radius:99px;font-size:11px;background:rgba(201,255,85,.035)}.pill:before{content:"";width:6px;height:6px;border-radius:50%;background:var(--lime);box-shadow:0 0 16px var(--lime)}
+h1{font-size:clamp(46px,6.5vw,82px);line-height:1.2;letter-spacing:-3px;margin:24px 0}.grad{background:linear-gradient(100deg,var(--lime),#fff 45%,var(--violet));color:transparent;background-clip:text;-webkit-background-clip:text}.hero p{max-width:650px;font-size:14px}.actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:25px}.stats{display:flex;gap:28px;margin-top:36px;color:#858b98;font-size:10px}.stats b{display:block;color:#f4f5ef;font-size:17px;margin-bottom:2px}
+.visual{height:500px;position:relative;display:grid;place-items:center;perspective:900px}.visual:after{content:"";position:absolute;width:280px;height:90px;border-radius:50%;background:rgba(0,0,0,.5);filter:blur(35px);bottom:45px;z-index:-1}.orb{width:310px;height:310px;border-radius:50%;background:radial-gradient(circle at 29% 23%,#f0ffc5,var(--lime) 12%,#7450b0 43%,#181527 70%,transparent 72%);filter:drop-shadow(0 0 65px rgba(157,123,255,.32));animation:float 7s ease-in-out infinite}.ring{position:absolute;width:430px;height:430px;border:1px solid rgba(201,255,85,.23);border-radius:50%;transform:rotateX(65deg) rotateZ(-30deg);animation:spin 25s linear infinite}.ring:after{content:"";position:absolute;top:12%;left:15%;width:11px;height:11px;border-radius:50%;background:var(--lime);box-shadow:0 0 20px var(--lime)}.ring.r2{width:485px;height:485px;border-color:rgba(157,123,255,.28);animation-direction:reverse}.floatcard{position:absolute;padding:17px;width:205px;background:rgba(255,255,255,.065);border:1px solid rgba(255,255,255,.17);border-radius:19px;backdrop-filter:blur(18px);box-shadow:0 25px 70px rgba(0,0,0,.5)}.floatcard.one{top:35px;right:0;transform:rotate(-6deg)}.floatcard.two{bottom:28px;left:0;transform:rotate(5deg)}.artbox{height:95px;margin:12px 0;border-radius:12px;background:linear-gradient(130deg,var(--lime),var(--violet),var(--pink));display:grid;place-items:center;color:#111;font-size:66px;font-weight:900}.tiny{font-size:9px;color:#8f95a2}.tag{position:absolute;padding:9px 12px;background:rgba(12,13,18,.88);border:1px solid var(--line);border-radius:11px;font-size:10px;color:var(--lime)}.tag.t1{left:0;top:45%}.tag.t2{right:12%;bottom:4%;color:var(--violet)}
+.home-shortcuts{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:4px auto 60px}.home-shortcut{border:1px solid var(--line);border-radius:18px;background:linear-gradient(135deg,rgba(255,255,255,.055),rgba(255,255,255,.015));padding:17px 18px;display:flex;align-items:center;justify-content:space-between;gap:10px;transition:.25s}.home-shortcut:hover{border-color:rgba(201,255,85,.42);transform:translateY(-4px);background:rgba(201,255,85,.045)}.home-shortcut b{font-size:12px}.home-shortcut span{color:var(--lime);font-size:18px}
+#process-content{padding:74px 0 78px;border-top:1px solid var(--line);background:radial-gradient(ellipse at 15% 30%,rgba(157,123,255,.08),transparent 45%)}.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}.step{border:1px solid rgba(255,255,255,.1);border-radius:20px;padding:22px;background:linear-gradient(145deg,rgba(255,255,255,.055),rgba(255,255,255,.012));position:relative;overflow:hidden}.step:before{content:"";position:absolute;inset:0 auto 0 0;width:3px;background:linear-gradient(var(--lime),var(--violet));opacity:.7}.step small{color:var(--lime);letter-spacing:2px;font-size:9px}.step h3{margin:18px 0 8px;font-size:16px}.step p{font-size:12px;line-height:2;color:var(--muted);margin:0}.ticker{border-block:1px solid var(--line);overflow:hidden;color:#626976;letter-spacing:2px}.track{width:max-content;display:flex;gap:28px;padding:18px 0;font-size:11px;animation:marquee 35s linear infinite}.track b{color:var(--lime)}
+.services{display:grid;grid-template-columns:repeat(6,1fr);gap:14px}.service{grid-column:span 2;min-height:230px;border:1px solid var(--line);border-radius:22px;padding:24px;background:linear-gradient(145deg,rgba(255,255,255,.05),rgba(255,255,255,.012));position:relative;overflow:hidden;transition:.28s}.service:nth-child(1),.service:nth-child(4){grid-column:span 3}.service:hover{transform:translateY(-6px);border-color:rgba(201,255,85,.4);box-shadow:var(--shadow)}.ico{width:48px;height:48px;display:grid;place-items:center;background:rgba(201,255,85,.09);color:var(--lime);border-radius:15px;font-size:23px;margin-bottom:24px}.service h3{margin:0 0 9px;font-size:17px}.service p{color:var(--muted);font-size:12px;line-height:2;margin:0}.num{position:absolute;left:20px;top:17px;color:rgba(255,255,255,.18);font-size:10px}
+.portfolio{background:linear-gradient(180deg,transparent,rgba(17,20,27,.65),transparent)}.filters{display:flex;gap:7px;flex-wrap:wrap;margin-bottom:22px}.filter{border:1px solid var(--line);background:rgba(255,255,255,.035);color:var(--muted);padding:9px 16px;border-radius:99px;font-size:11px;cursor:pointer;transition:.2s}.filter.active,.filter:hover{background:var(--lime);color:#111;border-color:var(--lime)}.works{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}.work{border:1px solid var(--line);border-radius:20px;overflow:hidden;background:var(--panel);cursor:pointer;transition:.3s}.work:hover{transform:translateY(-6px);border-color:rgba(255,255,255,.2);box-shadow:var(--shadow)}.workart{height:285px;display:grid;place-items:center;position:relative;overflow:hidden;background:var(--back,#21172e)}.workart:before,.workart:after{content:"";position:absolute;width:220px;height:220px;border-radius:50%;background:var(--c1,var(--lime));top:-50px;right:-50px}.workart:after{background:var(--c2,var(--violet));top:auto;right:auto;bottom:-90px;left:-40px}.poster{z-index:1;width:58%;height:78%;padding:15px;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.3);backdrop-filter:blur(8px);box-shadow:0 20px 60px rgba(0,0,0,.55);display:flex;flex-direction:column;justify-content:space-between;transform:rotate(-5deg);transition:.35s}.work:hover .poster{transform:rotate(0) scale(1.045)}.poster strong{font-size:clamp(22px,3vw,38px);line-height:1.08}.poster small,.poster span{font-size:8px;color:rgba(255,255,255,.72)}.workinfo{padding:17px;display:flex;justify-content:space-between;align-items:center}.workinfo h3{font-size:14px;margin:0 0 4px}.workinfo p{font-size:10px;color:var(--muted);margin:0}.note{color:#666d79;font-size:10px;line-height:2;margin-top:14px}
+.calc{border:1px solid rgba(201,255,85,.25);border-radius:28px;padding:clamp(18px,3vw,32px);background:linear-gradient(145deg,#171a23,#0b0c11 72%);box-shadow:var(--shadow);position:relative;overflow:hidden}.calc:before{content:"PROJECT ESTIMATOR / 3.8";display:block;color:var(--lime);font-size:9px;letter-spacing:2px;margin-bottom:18px;opacity:.8}.calcgrid{display:grid;grid-template-columns:1fr .78fr;gap:clamp(20px,4vw,48px)}.fields{display:grid;grid-template-columns:1fr 1fr;gap:13px}.field{display:flex;flex-direction:column;gap:7px}.field.full{grid-column:1/-1}.field label{font-size:11px;color:#d8dbe4;font-weight:700}.field input,.field select{background:#08090ddd;color:white;border:1px solid rgba(255,255,255,.12);border-radius:14px;padding:13px;min-width:0;min-height:50px}.field input:focus,.field select:focus{outline:none;border-color:var(--lime);box-shadow:0 0 0 3px rgba(201,255,85,.08)}.packages{display:flex;gap:8px}.pkg{flex:1;padding:11px 5px;border:1px solid var(--line);background:rgba(255,255,255,.04);color:#bfc2cb;border-radius:13px;font-size:11px;font-weight:800;cursor:pointer;transition:.2s}.pkg.active{border-color:var(--lime);color:var(--lime);background:rgba(201,255,85,.08);box-shadow:inset 0 0 0 1px rgba(201,255,85,.15)}.result{background:rgba(5,6,10,.7);border:1px solid rgba(201,255,85,.28);border-radius:24px;padding:23px;display:flex;flex-direction:column;justify-content:space-between;min-height:270px}.muted{color:var(--muted);font-size:11px}.price{font-size:clamp(31px,4.5vw,49px);font-weight:900;color:var(--lime);margin:10px 0;text-shadow:0 0 25px rgba(201,255,85,.12)}.disclaimer{font-size:10px;line-height:2;color:#707683;border-right:2px solid var(--violet);padding:7px 11px;background:rgba(157,123,255,.06);border-radius:0 9px 9px 0}.result .btn{margin-top:18px}.package-info{font-size:10px;color:var(--muted);line-height:1.8;margin-top:8px;padding:10px 12px;border-radius:11px;background:rgba(157,123,255,.05);border:1px solid rgba(157,123,255,.13)}
+/* Word package showcase */
+#wordPackageShowcase{margin-top:16px;display:none}.word-packages-head{text-align:center;margin:7px 0 18px}.word-packages-head .eyebrow{font-size:9px;letter-spacing:2px;color:var(--lime);font-weight:800}.word-packages-head h3{font-size:clamp(20px,3vw,27px);margin:7px 0;color:#f5f6f0}.word-packages-head p,.word-package-note{color:var(--muted);font-size:11px;line-height:1.9}.word-package-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}.word-package-card{position:relative;display:flex;flex-direction:column;min-width:0;padding:18px 16px 15px;border:1px solid var(--line);border-radius:20px;background:linear-gradient(155deg,rgba(255,255,255,.05),rgba(255,255,255,.015));transition:.22s;cursor:pointer}.word-package-card:hover{transform:translateY(-4px);border-color:rgba(201,255,85,.42)}.word-package-card.is-selected{border-color:var(--pkg-accent,var(--lime));box-shadow:0 0 0 1px rgba(255,255,255,.04),0 15px 40px rgba(0,0,0,.2)}.silver-card{--pkg-accent:#c7d2df}.bronze-card{--pkg-accent:#c58a60}.gold-card{--pkg-accent:#f4cf65}.word-card-top{display:flex;align-items:center;justify-content:space-between;gap:8px}.word-package-icon{display:grid;place-items:center;width:36px;height:36px;border-radius:12px;background:rgba(255,255,255,.06);color:var(--pkg-accent);font-size:20px}.word-tier{font-size:8px;letter-spacing:1.2px;color:var(--pkg-accent);font-weight:900}.word-package-card h4{font-size:22px;margin:14px 0 2px}.word-tagline{font-size:11px;line-height:1.8;min-height:40px;color:#b5b8c2;margin:0}.word-price{font-size:25px;font-weight:900;color:var(--pkg-accent);margin:14px 0;padding-bottom:13px;border-bottom:1px solid rgba(255,255,255,.09);white-space:nowrap}.word-price small{display:block;font-size:9px;font-weight:500;color:#999eaa;margin-top:4px}.word-package-card ul{list-style:none;padding:0;margin:0 0 18px;flex:1}.word-package-card li{font-size:10px;line-height:1.9;color:#d9dbe0;padding:4px 0;display:flex;gap:7px}.word-package-card li:before{content:'✓';color:var(--pkg-accent);font-weight:900}.word-select-btn{width:100%;border:1px solid color-mix(in srgb,var(--pkg-accent) 50%,transparent);background:rgba(255,255,255,.04);color:#fff;border-radius:12px;padding:10px 7px;font:inherit;font-size:10px;font-weight:800;cursor:pointer}.is-selected .word-select-btn{background:var(--pkg-accent);color:#161616}.word-popular{position:absolute;top:0;right:0;padding:5px 10px;border-radius:0 19px 0 12px;background:#c58a60;color:#1b120c;font-size:9px;font-weight:900}.word-package-note{text-align:center;margin:11px 0 0}
+/* About/contact */
+.aboutgrid{display:grid;grid-template-columns:.8fr 1.2fr;gap:45px;align-items:center}.aboutart{height:390px;border:1px solid var(--line);border-radius:25px;background:radial-gradient(circle,rgba(157,123,255,.28),transparent 60%),var(--panel);display:grid;place-items:center;position:relative;overflow:hidden}.symbol{font-size:200px;font-weight:900;color:var(--lime);text-shadow:14px 18px rgba(157,123,255,.4);transform:rotate(-12deg)}.stamp{position:absolute;bottom:20px;right:20px;background:rgba(8,9,13,.85);padding:11px;border-radius:11px;font-size:10px}.about p{font-size:13px}.chips{display:flex;gap:7px;flex-wrap:wrap}.chips span{border:1px solid var(--line);padding:8px 12px;border-radius:99px;font-size:10px}.contact{padding:clamp(24px,5vw,48px);border:1px solid rgba(201,255,85,.25);border-radius:27px;background:radial-gradient(ellipse at right top,rgba(201,255,85,.08),transparent 50%),var(--panel);display:flex;align-items:center;justify-content:space-between;gap:25px}.contact p{max-width:570px;color:var(--muted);line-height:2;font-size:13px}.contactlinks{display:flex;flex-direction:column;gap:9px;min-width:210px}footer{padding:30px 0;color:#666d79;font-size:10px}.foot{border-top:1px solid var(--line);padding-top:24px;display:flex;justify-content:space-between;gap:15px}
+/* Modal / motion */
+.modal{display:none;position:fixed;inset:0;z-index:100;background:rgba(0,0,0,.78);backdrop-filter:blur(12px);place-items:center;padding:20px}.modal.open{display:grid}.modalbox{max-width:520px;width:100%;background:#171a22;border:1px solid var(--line-strong);border-radius:23px;padding:30px;position:relative;box-shadow:var(--shadow)}.close{position:absolute;left:15px;top:15px;background:rgba(255,255,255,.06);border:1px solid var(--line);color:white;border-radius:50%;width:35px;height:35px;cursor:pointer}.modalbox p{color:var(--muted);line-height:2;font-size:12px}
+.reveal{opacity:0;transform:translateY(18px);transition:opacity .65s ease,transform .65s ease}.reveal.visible{opacity:1;transform:none}@keyframes float{50%{transform:translateY(-17px) rotate(7deg)}}@keyframes spin{to{transform:rotateX(65deg) rotateZ(330deg)}}@keyframes marquee{to{transform:translateX(50%)}}
+/* v3.8 calculator flow */
+.v38-host{position:relative}.v38-head{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-bottom:13px}.v38-stepname{font-weight:900;color:var(--lime);font-size:14px}.v38-counter{font-size:10px;color:var(--muted)}.v38-track{display:grid;grid-template-columns:repeat(4,1fr);gap:7px;margin-bottom:20px}.v38-track span{height:4px;border-radius:99px;background:rgba(255,255,255,.1);transition:.2s}.v38-track span.on{background:linear-gradient(90deg,var(--violet),var(--lime))}.v38-panel{padding:18px;border:1px solid rgba(255,255,255,.08);border-radius:20px;background:linear-gradient(145deg,rgba(255,255,255,.04),rgba(255,255,255,.01));min-height:180px;animation:panelIn .22s ease-out}.v38-panel[hidden]{display:none}.v38-controls{display:flex;gap:9px;margin-top:13px}.v38-controls button{flex:1;min-height:49px;border-radius:14px;border:1px solid var(--line);background:rgba(255,255,255,.04);color:inherit;font:inherit;font-weight:800;cursor:pointer}.v38-controls .v38-next{background:var(--lime);color:#111;border-color:var(--lime)}.v38-controls button:disabled{opacity:.35;cursor:not-allowed}.v38-summary{padding:11px 13px;border-radius:13px;background:linear-gradient(110deg,rgba(157,123,255,.07),rgba(201,255,85,.045));border:1px solid rgba(157,123,255,.16);margin-top:13px;color:var(--muted);font-size:10px;line-height:1.9}.v38-controls button:focus-visible,.filter:focus-visible,.pkg:focus-visible,.word-package-card:focus-visible,.btn:focus-visible,.menu:focus-visible,.close:focus-visible{outline:2px solid var(--lime);outline-offset:3px}@keyframes panelIn{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
+@media(max-width:900px){.hero{grid-template-columns:1fr;text-align:center;padding-top:45px}.hero p{margin-inline:auto}.actions,.stats{justify-content:center}.visual{grid-row:1;height:400px}.services .service,.service:nth-child(n){grid-column:span 3}.works{grid-template-columns:repeat(2,1fr)}.calcgrid{grid-template-columns:1fr}.aboutgrid{gap:25px}.links{gap:16px}}
+@media(max-width:650px){:root{--wrap:calc(100% - 28px)}nav{height:68px}.links{display:none;position:absolute;top:62px;right:14px;left:14px;background:rgba(17,20,27,.97);padding:18px;border:1px solid var(--line);border-radius:18px;flex-direction:column;align-items:stretch;gap:4px;box-shadow:var(--shadow)}.links.open{display:flex}.links a{padding:11px 7px}.site-header>.wrap>.btn,.nav>.btn{display:none}.menu{display:block}.hero{padding:25px 0 50px;min-height:0}.visual{height:310px;transform:scale(.88);margin:-5px 0}.orb{width:240px;height:240px}.ring{width:325px;height:325px}.ring.r2{width:365px;height:365px}.floatcard{width:155px;padding:11px}.floatcard.one{top:16px}.floatcard.two{bottom:8px}.artbox{height:70px;font-size:52px}h1{font-size:clamp(40px,11vw,56px);letter-spacing:-2px}.hero p{font-size:13px}.stats{gap:15px}.home-shortcuts{grid-template-columns:1fr 1fr;gap:8px;margin-bottom:35px}.home-shortcut{padding:14px}.home-shortcut b{font-size:11px}.section{padding:68px 0}.page-heading{padding:38px 0 5px}.section-head{display:block}.section-head p{margin-top:11px}.services .service,.service:nth-child(n){grid-column:span 6;padding:18px;min-height:210px}.works{grid-template-columns:1fr}.workart{height:280px}.steps{grid-template-columns:1fr 1fr}.step{padding:15px 10px}.step h3{font-size:14px}.fields{grid-template-columns:1fr}.field.full{grid-column:auto}.aboutgrid{grid-template-columns:1fr}.aboutart{height:300px}.symbol{font-size:170px}.contact{display:block}.contactlinks{margin-top:20px}.foot{flex-direction:column;text-align:center}.section h2,.page-heading h2{font-size:31px}.word-package-grid{grid-template-columns:1fr}.word-package-card{padding:18px}.v38-panel{padding:14px;border-radius:17px}.v38-controls{position:sticky;bottom:8px;z-index:3;padding:8px;background:rgba(8,9,13,.93);border:1px solid var(--line);border-radius:16px;backdrop-filter:blur(12px)}}
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{animation:none!important;scroll-behavior:auto!important;transition:none!important}.reveal{opacity:1;transform:none}.v38-panel{animation:none}}
+</style>
+<style id="v39-performance">
+/* Arshia Art 3.9 — performance layer */
+html{scroll-behavior:smooth}
+@media (max-width:850px){header{backdrop-filter:none}.floatcard{backdrop-filter:none}.modal{backdrop-filter:none}.contact{backdrop-filter:none}}
+@media (prefers-reduced-motion:reduce){.track,.orb,.ring{animation:none!important}.reveal{opacity:1!important;transform:none!important}}
+.v39-progress{position:fixed;top:0;right:0;height:3px;width:0;background:linear-gradient(90deg,var(--violet),var(--lime));z-index:9999;pointer-events:none}
+.v39-toast{position:fixed;bottom:20px;right:20px;z-index:9998;background:#14131fee;border:1px solid #ffffff18;border-radius:14px;padding:12px 16px;font-size:12px;box-shadow:0 18px 50px #0008;transform:translateY(20px);opacity:0;pointer-events:none;transition:.25s}
+.v39-toast.show{transform:none;opacity:1}
+.v39-contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.v39-contact-btn{border-radius:14px!important;min-height:48px}
+@media(max-width:600px){.v39-contact-grid{grid-template-columns:1fr}.v39-toast{right:14px;left:14px;bottom:14px;text-align:center}}
+</style>
+</head><body><a class="skip-link" href="#home">پرش به محتوای اصلی</a><div class="scroll-progress" id="scrollProgress"></div><header class="site-header"><div class="wrap"><nav aria-label="ناوبری اصلی"><a class="brand" href="#home"><span class="mark">A.</span><span>ARSHIA ART<small>DESIGN BEYOND ORDINARY</small></span></a><div class="links" id="links"><a href="#services">خدمات</a><a href="#portfolio">نمونه‌کارها</a><a href="#process">فرآیند</a><a href="#calculator">محاسبه قیمت</a><a href="#about">درباره من</a></div><a class="btn primary" href="#contact">شروع پروژه ↗</a><button class="menu" id="menu" type="button" aria-label="باز کردن منو" aria-expanded="false" aria-controls="links">☰</button></nav></div></header>
+<main id="main"><div id="home" class="page-view current"><section class="wrap hero"><div><span class="pill">استودیو مستقل طراحی گرافیک</span><h1>من ارشیا هستم؛<br><span class="grad">ایده‌ها را</span><br>دیدنی می‌کنم.</h1><p>از یک ایده خام تا یک خروجی چشمگیر؛ طراحی گرافیک، صفحه‌آرایی و تجربه‌های بصری با جزئیات حساب‌شده، شخصیت مستقل و نگاهی متفاوت.</p><div class="actions"><a class="btn primary" href="#portfolio">دیدن نمونه‌کارها ↙</a><a class="btn" href="#calculator">محاسبه هزینه ✳</a></div><div class="stats"><div><b>01 / 01</b>ایده تا اجرا</div><div><b>100%</b>توجه به جزئیات</div><div><b>∞</b>جای خلاقیت</div></div></div><div class="visual"><div class="orb"></div><div class="ring"></div><div class="ring r2"></div><div class="floatcard one"><div class="tiny">CREATIVE DIRECTION ✳</div><div class="artbox">A.</div><div class="tiny">COLOR · FORM · TYPE</div></div><div class="floatcard two"><div class="tiny">VISUAL EXPERIMENT 02</div><h3>Think.<br>Make it <span style="color:var(--lime)">visible.</span></h3><div class="tiny">DESIGN / CONCEPT</div></div><span class="tag t1">✦ طراحی با هویت</span><span class="tag t2">PSD · TYPE · IDEAS</span></div></section><div class="wrap home-shortcuts"><a class="home-shortcut" href="#services" data-view="services"><b>خدمات طراحی</b><span>↗</span></a><a class="home-shortcut" href="#portfolio" data-view="portfolio"><b>نمونه‌کارها</b><span>↗</span></a><a class="home-shortcut" href="#calculator" data-view="calculator"><b>ماشین‌حساب قیمت</b><span>↗</span></a><a class="home-shortcut" href="#contact" data-view="contact"><b>سفارش و ارتباط</b><span>↗</span></a></div><section class="section wrap" id="process-content"><div class="section-head reveal"><div><div class="kicker">03 — HOW IT WORKS</div><h2>از ایده تا خروجی،<br>قدم‌به‌قدم.</h2></div><p>فرآیند شفاف کمک می‌کند در هر مرحله بدانی پروژه کجاست و چه چیزی در انتظار تأیید توست.</p></div><div class="steps"><div class="step reveal"><small>STEP 01</small><h3>گفت‌وگو و شناخت</h3><p>هدف، مخاطب، محتوا و حال‌وهوای پروژه مشخص می‌شود.</p></div><div class="step reveal"><small>STEP 02</small><h3>ایده و مسیر بصری</h3><p>جهت‌گیری طراحی، ساختار و زبان بصری شکل می‌گیرد.</p></div><div class="step reveal"><small>STEP 03</small><h3>طراحی و بازبینی</h3><p>طرح اجرا می‌شود و بازخوردها طبق توافق اعمال می‌شوند.</p></div><div class="step reveal"><small>STEP 04</small><h3>تحویل نهایی</h3><p>فایل‌ها با فرمت توافق‌شده آماده و تحویل داده می‌شوند.</p></div></div></section>
+<div class="ticker"><div class="track">GRAPHIC DESIGN <b>✳</b> VISUAL STORYTELLING <b>✳</b> EDITORIAL DESIGN <b>✳</b> BRAND IDENTITY <b>✳</b> GRAPHIC DESIGN <b>✳</b> VISUAL STORYTELLING <b>✳</b> EDITORIAL DESIGN <b>✳</b></div></div>
+</div><div id="services" class="page-view"><div class="wrap page-heading"><div class="kicker">01 — SERVICES</div><h2>خدمات طراحی</h2></div><section class="section wrap" id="services-content"><div class="section-head reveal"><div><div class="kicker">01 — WHAT I DO</div><h2>طراحی‌هایی با فکر،<br>نه فقط ظاهر.</h2></div><p>هر پروژه از شناخت نیاز شروع می‌شود و با انتخاب درست فرم، رنگ و جزئیات به یک خروجی منسجم می‌رسد.</p></div><div class="services"><article class="service reveal"><span class="num">01</span><div class="ico">▤</div><h3>صفحه‌آرایی و طراحی کتاب</h3><p>طراحی داخلی کتاب، جزوه و فایل آموزشی؛ از ساختار صفحات تا جلد و هویت بصری یکپارچه.</p></article><article class="service reveal"><span class="num">02</span><div class="ico">▧</div><h3>طراحی پاورپوینت</h3><p>اسلایدهای حرفه‌ای، منظم و روایت‌محور برای ارائه‌های آموزشی، دانشگاهی و کسب‌وکار.</p></article><article class="service reveal"><span class="num">03</span><div class="ico">◈</div><h3>طراحی گرافیک</h3><p>پوستر، کاور، بنر و اقلام تبلیغاتی با ترکیب‌بندی قوی و توجه ویژه به جزئیات.</p></article><article class="service reveal"><span class="num">04</span><div class="ico">✳</div><h3>هویت بصری</h3><p>ساخت زبان بصری منسجم برای اینکه طرح شما در نگاه اول قابل تشخیص باشد.</p></article><article class="service reveal"><span class="num">05</span><div class="ico">⌘</div><h3>پروژه‌های اختصاصی</h3><p>ایده‌ای متفاوت داری؟ جزئیات را بگو تا راه‌حل متناسب با نیاز پروژه طراحی شود.</p></article></div></section>
+</div><div id="portfolio" class="page-view"><section class="section portfolio" id="portfolio-content"><div class="wrap"><div class="section-head reveal"><div><div class="kicker">02 — SELECTED WORK</div><h2>ویترین ایده‌ها</h2></div><p>قاب‌های مفهومی برای نمایش حال‌وهوای طراحی. این طرح‌های نمایشی باید با آثار واقعی خودت جایگزین شوند.</p></div><div class="filters"><button class="filter active" data-filter="all">همه</button><button class="filter" data-filter="poster">پوستر</button><button class="filter" data-filter="editorial">صفحه‌آرایی</button><button class="filter" data-filter="digital">دیجیتال</button></div><div class="works"><div class="work reveal" data-kind="poster" data-title="فرم در حرکت" data-desc="مطالعه ترکیب رنگ، فرم و تایپوگرافی برای یک پوستر مفهومی."><div class="workart" data-c1="#c9ff55" data-c2="#6d45bd"><div class="poster"><small>ART / EXPERIMENT 01</small><strong>FORM<br>IN<br>MOTION</strong><span>COLOR · SHAPE · RHYTHM</span></div></div><div class="workinfo"><div><h3>فرم در حرکت</h3><p>پوستر مفهومی / کانسپت</p></div>↗</div></div><div class="work reveal" data-kind="editorial" data-title="روایت صفحه" data-desc="کانسپت صفحه‌آرایی با تأکید بر ریتم، فضای خالی و خوانایی."><div class="workart" data-c1="#ff79c6" data-c2="#ef9f48" data-back="#24131f"><div class="poster"><small>EDITORIAL / 02</small><strong>THE<br>ART OF<br>SPACE</strong><span>LAYOUT STUDY</span></div></div><div class="workinfo"><div><h3>روایت صفحه</h3><p>صفحه‌آرایی / کانسپت</p></div>↗</div></div><div class="work reveal" data-kind="digital" data-title="فراتر از پیکسل" data-desc="تمرین طراحی دیجیتال با نور، عمق و لایه‌های رنگی."><div class="workart" data-c1="#70e8ff" data-c2="#9d7bff" data-back="#101d2b"><div class="poster"><small>DIGITAL / 03</small><strong>BEYOND<br>THE<br>PIXEL</strong><span>DIGITAL WORLDS</span></div></div><div class="workinfo"><div><h3>فراتر از پیکسل</h3><p>گرافیک دیجیتال / کانسپت</p></div>↗</div></div><div class="work reveal" data-kind="poster" data-title="نقطه شروع" data-desc="پوستر تایپوگرافیک با تمرکز بر کنتراست و سلسله‌مراتب بصری."><div class="workart" data-c1="#f6d365" data-c2="#fda085" data-back="#211b15"><div class="poster"><small>TYPE / 04</small><strong>START<br>WITH<br>AN IDEA</strong><span>MAKE IT MATTER</span></div></div><div class="workinfo"><div><h3>نقطه شروع</h3><p>پوستر تایپوگرافیک / کانسپت</p></div>↗</div></div><div class="work reveal" data-kind="editorial" data-title="ساختار و سکوت" data-desc="مطالعه گرید و فضای منفی برای محتوای چندصفحه‌ای."><div class="workart" data-c1="#b4f1d8" data-c2="#6588e8" data-back="#10201e"><div class="poster"><small>GRID / 05</small><strong>STRUCTURE<br>&<br>SILENCE</strong><span>EDITORIAL SYSTEM</span></div></div><div class="workinfo"><div><h3>ساختار و سکوت</h3><p>گرید صفحه / کانسپت</p></div>↗</div></div><div class="work reveal" data-kind="digital" data-title="سیگنال خلاقیت" data-desc="کانسپت تصویری برای رسانه‌های دیجیتال و شبکه‌های اجتماعی."><div class="workart" data-c1="#ff6b6b" data-c2="#a855f7" data-back="#25121e"><div class="poster"><small>SIGNAL / 06</small><strong>CREATE<br>YOUR<br>SIGNAL</strong><span>VISUAL COMMUNICATION</span></div></div><div class="workinfo"><div><h3>سیگنال خلاقیت</h3><p>گرافیک دیجیتال / کانسپت</p></div>↗</div></div></div><p class="note">توجه: کارت‌های این قسمت طرح‌های نمایشی هستند، نه نمونه‌کار واقعی. تصاویر اصلی خودت را می‌توانی جایگزین کنی.</p></div></section>
+</div></div><div id="calculator" class="page-view"><section class="section wrap" id="calculator-content"><div class="section-head reveal"><div><div class="kicker">04 — PROJECT ESTIMATOR</div><h2>قیمت پروژه‌ات را<br>برآورد کن.</h2></div><p>نوع خدمت و جزئیات را انتخاب کن تا برآورد اولیه ببینی. مبلغ قطعی پس از بررسی محتوا مشخص می‌شود.</p></div><div class="calc reveal"><div class="calcgrid"><div><div class="fields"><div class="field full"><label>نوع پروژه</label><select id="service"><option value="word">طراحی و صفحه‌آرایی Word</option><option value="ppt">طراحی پاورپوینت</option><option value="ps">طراحی Photoshop</option></select></div><div class="field full" id="packageField"><label>پکیج ورد</label><div class="packages"><button class="pkg" data-p="silver">نقره‌ای</button><button class="pkg active" data-p="bronze">برنزی</button><button class="pkg" data-p="gold">طلایی</button></div>
+<div class="field full" id="wordPackageShowcase" aria-label="مقایسه پکیج‌های طراحی ورد">
+  <div class="word-packages-head"><span class="eyebrow">WORD DESIGN PACKAGES</span><h3>پکیج مناسب پروژه‌ات رو انتخاب کن</h3><p>سه سطح طراحی؛ قیمت‌گذاری شفاف بر اساس تعداد صفحات مفید</p></div>
+  <div class="word-package-grid">
+    <article class="word-package-card silver-card" data-word-card="silver" tabindex="0" role="button" aria-pressed="false">
+      <div class="word-card-top"><span class="word-package-icon">✦</span><span class="word-tier">01 / SILVER</span></div>
+      <h4>نقره‌ای</h4><p class="word-tagline">ساده، مرتب و کاربردی</p>
+      <div class="word-price">۸٬۰۰۰ <small>تومان / صفحه</small></div>
+      <ul><li>صفحه‌آرایی داخلی با سبک متوسط</li><li>مناسب جزوه تایپ‌شده</li><li>۳ روز پشتیبانی</li></ul>
+      <button type="button" class="word-select-btn">انتخاب پکیج نقره‌ای</button>
+    </article>
+    <article class="word-package-card bronze-card is-featured" data-word-card="bronze" tabindex="0" role="button" aria-pressed="true">
+      <div class="word-card-top"><span class="word-package-icon">✧</span><span class="word-tier">02 / BRONZE</span></div>
+      <div class="word-popular">انتخاب متعادل</div><h4>برنزی</h4><p class="word-tagline">صفحه‌آرایی همراه با جلد اختصاصی</p>
+      <div class="word-price">۱۴٬۰۰۰ <small>تومان / صفحه</small></div>
+      <ul><li>طراحی صفحات داخلی</li><li>طراحی جلد رویی و پشتی</li><li>۲ هفته پشتیبانی</li></ul>
+      <button type="button" class="word-select-btn">انتخاب پکیج برنزی</button>
+    </article>
+    <article class="word-package-card gold-card" data-word-card="gold" tabindex="0" role="button" aria-pressed="false">
+      <div class="word-card-top"><span class="word-package-icon">✺</span><span class="word-tier">03 / GOLD</span></div>
+      <h4>طلایی</h4><p class="word-tagline">طراحی کامل و حرفه‌ای از صفر تا صد</p>
+      <div class="word-price">۲۵٬۰۰۰ <small>تومان / صفحه</small></div>
+      <ul><li>صفحه‌آرایی کامل و حرفه‌ای</li><li>طراحی جلد رویی و پشتی</li><li>۳ هفته پشتیبانی</li></ul>
+      <button type="button" class="word-select-btn">انتخاب پکیج طلایی</button>
+    </article>
+  </div>
+  <p class="word-package-note">* هزینه تایپ جداگانه محاسبه می‌شود. مبلغ نهایی با تعداد صفحات مفید و خدمات اضافه تغییر می‌کند.</p>
+</div>
+</div><div class="field" id="quantityField"><label id="qlabel">تعداد صفحات مفید طراحی</label><input id="quantity" type="number" min="1" value="10" inputmode="numeric"></div><div class="field" id="extraField"><label>خدمات اضافه</label><select id="extra"><option value="0">بدون خدمات اضافه</option><option value="250000">جلد اختصاصی (+۲۵۰ هزار)</option></select></div><div class="field full" id="psField" style="display:none"><label>نوع طراحی فتوشاپ</label><select id="psType"><option value="400000">پوستر / بنر — ۴۰۰٬۰۰۰ تومان</option><option value="250000">کاور شبکه اجتماعی — ۲۵۰٬۰۰۰ تومان</option><option value="350000">کارت ویزیت — ۳۵۰٬۰۰۰ تومان</option><option value="300000">تراکت / فلایر — ۳۰۰٬۰۰۰ تومان</option></select></div><div class="field full"><label>توضیحات اختیاری</label><input id="notes" placeholder="موضوع، زمان تحویل یا جزئیات پروژه"></div></div><p class="disclaimer">هزینه تایپ متن جداگانه محاسبه می‌شود. این ماشین‌حساب برآورد اولیه است و قیمت قطعی پس از بررسی فایل اعلام خواهد شد.</p></div><div class="result"><div><div class="muted">برآورد اولیه پروژه</div><div class="price" id="price">۱۴۰٬۰۰۰ <small>تومان</small></div><div class="muted" id="desc">پکیج برنزی ورد · ۱۰ صفحه مفید</div></div><a class="btn primary" id="quote" target="_blank" rel="noopener">درخواست برآورد دقیق در تلگرام ↗</a></div></div></div></section>
+</div><div id="about" class="page-view"><section class="section wrap" id="about-content"><div class="aboutgrid"><div class="aboutart reveal"><div class="symbol">A.</div><div class="stamp">ARSHIA ART<br><span style="color:var(--muted)">Independent Design Practice</span></div></div><div class="about reveal"><div class="kicker">05 — A LITTLE ABOUT ME</div><h2>طراحی، جایی بین<br><span style="color:var(--lime)">منطق و خیال.</span></h2><p>من ارشیا هستم؛ طراح گرافیک و علاقه‌مند به ساخت تجربه‌های بصری که هم زیبا باشند و هم هدف مشخصی را دنبال کنند. برای من جزئیات کوچک همان‌قدر مهم‌اند که ایده بزرگ پشت یک پروژه.</p><p>این فضا برای نمایش مسیر خلاقانه، خدمات و نمونه‌های طراحی من ساخته شده؛ هر پروژه فرصتی است برای ساختن چیزی که امضای خودش را داشته باشد.</p><div class="chips"><span>Graphic Design</span><span>Photoshop</span><span>Editorial Design</span><span>Typography</span><span>Visual Storytelling</span></div></div></div></section>
+</div><div id="contact" class="page-view"><section class="section wrap" id="contact-content"><div class="contact reveal"><div><div class="kicker">06 — LET’S MAKE SOMETHING</div><h2>ایده‌ای توی ذهنته؟<br>بیا بهش شکل بدیم.</h2><p>برای سفارش طراحی، مشاوره یا صحبت درباره ایده تازه پیام بده. جزئیات را بفرست تا درباره مسیر اجرا و زمان‌بندی صحبت کنیم.</p></div><div class="contactlinks"><a class="btn primary" href="https://t.me/arshia1arshia" target="_blank">تلگرام: @arshia1arshia ↗</a><a class="btn" href="https://eitaa.com/ay_art" target="_blank">ایتا: @ay_art ↗</a></div></div></section></div></main>
+<div class="v39-progress" id="v39Progress"></div><div class="v39-toast" id="v39Toast" role="status"></div>
+<section class="v39-admin-shell" id="adminPanel" aria-hidden="true">
+<div class="v39-admin-overlay" data-admin-close></div>
+<div class="v39-admin" role="dialog" aria-modal="true" aria-labelledby="adminTitle">
+<header class="v39-admin-head"><div><span class="kicker">ARSHIA ART / ADMIN</span><h2 id="adminTitle">پنل مدیریت</h2></div><button class="v39-admin-close" type="button" data-admin-close aria-label="بستن">×</button></header>
+<div class="v39-admin-body">
+<div class="v39-admin-note">نسخه‌ی 3.9 محتوای قابل ویرایش را فعلاً در مرورگر ذخیره می‌کند. ساختار برای اتصال API و دیتابیس در مرحله‌ی بعد آماده است.</div>
+<div class="v39-admin-grid">
+<label>عنوان اصلی<input id="adminHeroTitle" value="من ارشیا هستم؛ ایده‌ها را دیدنی می‌کنم."></label>
+<label>توضیح اصلی<textarea id="adminHeroText" rows="4">طراحی گرافیک، صفحه‌آرایی و ارائه‌هایی که فقط زیبا نیستند؛ هدف دارند.</textarea></label>
+<label>نام تلگرام<input id="adminTelegram" value="@arshia1arshia"></label>
+<label>نام ایتا<input id="adminEitaa" value="@ay_art"></label>
+</div>
+<div class="v39-admin-actions"><button class="btn primary" id="adminSave" type="button">ذخیره تغییرات</button><button class="btn" id="adminReset" type="button">بازگردانی</button></div>
+</div></div></section>
+<footer><div class="wrap foot"><div><b style="color:white">ARSHIA ART</b> — طراحی با امضای خودت.</div><div>© <span id="year"></span> همه حقوق محفوظ است.</div><a href="#home">بازگشت به بالا ↑</a></div></footer><div class="modal" id="modal"><div class="modalbox"><button class="close" id="close">×</button><div class="kicker">SELECTED CONCEPT</div><h3 id="mt"></h3><p id="md"></p><p class="note">این کارت طرح نمایشی است و می‌تواند با اثر واقعی جایگزین شود.</p></div></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+(() => {
+  'use strict';
+  const $ = (s, root=document) => root.querySelector(s);
+  const $$ = (s, root=document) => [...root.querySelectorAll(s)];
+  const reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  // Design-token bridge for portfolio cards: keeps content data-driven instead of inline styles.
+  $$('.workart').forEach(el => {
+    ['c1','c2','back'].forEach(k => { const v=el.dataset[k]; if(v) el.style.setProperty('--'+k,v); });
+  });
+
+  // Mobile navigation with accessible state.
+  const menu=$('#menu'), links=$('#links');
+  if(menu && links){
+    menu.addEventListener('click',()=>{const open=links.classList.toggle('open');menu.setAttribute('aria-expanded',String(open));});
+    $$('#links a').forEach(a=>a.addEventListener('click',()=>{links.classList.remove('open');menu.setAttribute('aria-expanded','false');}));
+  }
+
+  // Reveal-on-scroll, with reduced-motion fallback.
+  const revealEls=$$('.reveal');
+  if(!reduced && 'IntersectionObserver' in window){
+    const io=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');io.unobserve(e.target)}}),{threshold:.08});
+    revealEls.forEach(el=>io.observe(el));
+  } else revealEls.forEach(el=>el.classList.add('visible'));
+
+  // Portfolio filters + modal.
+  const modal=$('#modal'), mt=$('#mt'), md=$('#md');
+  $$('.filter').forEach(btn=>btn.addEventListener('click',()=>{
+    $$('.filter').forEach(x=>{x.classList.remove('active');x.setAttribute('aria-pressed','false')});
+    btn.classList.add('active');btn.setAttribute('aria-pressed','true');
+    const kind=btn.dataset.filter;
+    $$('.work').forEach(w=>w.hidden=!(kind==='all'||w.dataset.kind===kind));
+  }));
+  const closeModal=()=>{modal?.classList.remove('open');document.body.style.overflow='';};
+  $$('.work').forEach(w=>w.addEventListener('click',()=>{if(mt)mt.textContent=w.dataset.title;if(md)md.textContent=w.dataset.desc;modal?.classList.add('open');document.body.style.overflow='hidden';}));
+  $('#close')?.addEventListener('click',closeModal); modal?.addEventListener('click',e=>{if(e.target===modal)closeModal()});
+  document.addEventListener('keydown',e=>{if(e.key==='Escape')closeModal()});
+
+  // Hash-based page router: one source of truth, no duplicate navigation logic.
+  const pageIds=['home','services','portfolio','calculator','about','contact'];
+  function showPage(id, push=true){
+    if(!pageIds.includes(id)) id='home';
+    $$('.page-view').forEach(v=>v.classList.toggle('current',v.id===id));
+    $$('.links a').forEach(a=>{const active=a.getAttribute('href')==='#'+id;a.setAttribute('aria-current',active?'page':'false');});
+    links?.classList.remove('open'); menu?.setAttribute('aria-expanded','false');
+    if(push) history.replaceState(null,'','#'+id);
+    window.scrollTo({top:0,behavior:reduced?'auto':'smooth'});
+  }
+  $$('.links a,.home-shortcut,.brand').forEach(a=>a.addEventListener('click',e=>{
+    const href=a.getAttribute('href')||''; const id=a.dataset.view||href.slice(1);
+    if(id==='process'){e.preventDefault();showPage('home');setTimeout(()=>$('#process-content')?.scrollIntoView({behavior:reduced?'auto':'smooth'}),60);return;}
+    if(pageIds.includes(id)){e.preventDefault();showPage(id);}
+  }));
+  $$('footer a[href="#home"]').forEach(a=>a.addEventListener('click',e=>{e.preventDefault();showPage('home')}));
+  window.addEventListener('hashchange',()=>showPage(location.hash.slice(1)||'home',false));
+  showPage(location.hash.slice(1)||'home',false);
+
+  // Scroll progress and dynamic year.
+  const progress=$('#scrollProgress');
+  const updateProgress=()=>{if(!progress)return;const max=document.documentElement.scrollHeight-innerHeight;progress.style.width=(max>0?(scrollY/max)*100:0)+'%';};
+  addEventListener('scroll',updateProgress,{passive:true}); addEventListener('resize',updateProgress); updateProgress();
+  $('#year').textContent=new Date().getFullYear();
+
+  // Calculator: one clean state machine replacing the stacked 3.4/3.6/3.7 patches.
+  const root=$('#calculator-content'); if(!root)return;
+  const service=$('#service'), quantity=$('#quantity'), extra=$('#extra'), psType=$('#psType'), notes=$('#notes');
+  const packageField=$('#packageField'), packageLabel=packageField?.querySelector('label'), extraField=$('#extraField'), psField=$('#psField'), quantityField=$('#quantityField'), qlabel=$('#qlabel'), packageInfo=$('#packageInfo');
+  const packages=$$('.pkg',root);
+  const rates={word:{silver:8000,bronze:14000,gold:25000},ppt:{silver:10000,bronze:25000,gold:30000}};
+  const details={word:{silver:'صفحه‌آرایی داخلی با سبک متوسط · پشتیبانی ۳ روزه',bronze:'طراحی داخلی + جلد رو و پشت · پشتیبانی ۲ هفته‌ای',gold:'طراحی کامل صفر تا صد + جلد رو و پشت · پشتیبانی ۳ هفته‌ای'},ppt:{silver:'پکیج نقره‌ای طراحی اسلاید',bronze:'پکیج برنزی طراحی اسلاید',gold:'پکیج طلایی طراحی اسلاید'}};
+  const names={silver:'نقره‌ای',bronze:'برنزی',gold:'طلایی'};
+  const fa=n=>Math.round(n).toLocaleString('fa-IR');
+  const selectedPackage=()=>root.querySelector('.pkg.active')?.dataset.p||'bronze';
+  function calc(){
+    const s=service?.value,p=selectedPackage(),q=Math.max(1,parseInt(quantity?.value,10)||1);let total=0,desc='';
+    if(s==='word'){total=q*rates.word[p]+Number(extra?.value||0);desc=`پکیج ${names[p]} ورد · ${fa(q)} صفحه · ${details.word[p]} · هزینه تایپ جداست`;}
+    else if(s==='ppt'){total=q*rates.ppt[p];desc=`پکیج ${names[p]} پاورپوینت · ${fa(q)} اسلاید · هر اسلاید ${fa(rates.ppt[p])} تومان`;}
+    else {total=Number(psType?.value||0);desc=psType?.selectedOptions?.[0]?.textContent||'';}
+    const price=$('#price'), descEl=$('#desc'), quote=$('#quote');
+    if(price)price.innerHTML=fa(total)+' <small>تومان</small>'; if(descEl)descEl.textContent=desc;
+    if(quote){const msg=`سلام، برای پروژه‌ام برآورد دقیق می‌خواهم.\nنوع: ${service?.selectedOptions?.[0]?.textContent||''}\nجزئیات: ${desc}\nبرآورد سایت: ${fa(total)} تومان\nتوضیحات: ${notes?.value||'—'}`;quote.href='https://t.me/arshia1arshia?text='+encodeURIComponent(msg);}
+  }
+  function syncFields(){
+    const s=service?.value, isWord=s==='word', isPpt=s==='ppt';
+    if(packageField)packageField.style.display=(isWord||isPpt)?'':'none';
+    if(packageLabel)packageLabel.textContent=isWord?'پکیج ورد':'پکیج پاورپوینت';
+    if(extraField)extraField.style.display=isWord?'':'none'; if(psField)psField.style.display=s==='ps'?'':'none';
+    if(quantityField)quantityField.style.display=s==='ps'?'none':''; if(qlabel)qlabel.textContent=isPpt?'تعداد اسلاید':'تعداد صفحات مفید طراحی';
+    if(packageInfo)packageInfo.textContent=(details[s]?.[selectedPackage()])||'';
+    const showcase=$('#wordPackageShowcase'); if(showcase)showcase.style.display=isWord?'block':'none';
+    if(isWord)syncShowcase(false); calc(); refreshSummary();
+  }
+  function selectPackage(p){packages.forEach(x=>{const on=x.dataset.p===p;x.classList.toggle('active',on);x.setAttribute('aria-pressed',String(on));});if(packageInfo)packageInfo.textContent=(details[service.value]?.[p])||'';syncShowcase(false);calc();refreshSummary();}
+  packages.forEach(b=>{b.type='button';b.setAttribute('aria-pressed',b.classList.contains('active')?'true':'false');b.addEventListener('click',()=>selectPackage(b.dataset.p));});
+  function syncShowcase(native=true){const host=$('#wordPackageShowcase');if(!host||service?.value!=='word')return;const p=selectedPackage();$$('.word-package-card',host).forEach(c=>{const on=c.dataset.wordCard===p;c.classList.toggle('is-selected',on);c.setAttribute('aria-pressed',String(on));});}
+  $$('.word-package-card',root).forEach(card=>{const pick=()=>selectPackage(card.dataset.wordCard);card.addEventListener('click',e=>{if(e.target.closest('.word-select-btn')||e.currentTarget===card)pick()});card.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();pick()}});});
+  service?.addEventListener('change',syncFields); [quantity,extra,psType,notes].filter(Boolean).forEach(el=>{el.addEventListener('input',()=>{calc();refreshSummary()});el.addEventListener('change',()=>{calc();refreshSummary()});});
+
+  // Staged calculator UI.
+  const fields=root.querySelector('.fields'); const result=root.querySelector('.result');
+  if(fields){
+    const groups=[['انتخاب مسیر طراحی',['service']],['پکیج و حجم پروژه',['packageField','quantityField','psField']],['جزئیات سفارش',['extraField','notes']],['برآورد و ثبت سفارش',[]]];
+    const host=document.createElement('div');host.className='v38-host';
+    const head=document.createElement('div');head.className='v38-head';head.innerHTML='<span class="v38-stepname"></span><span class="v38-counter"></span>';
+    const track=document.createElement('div');track.className='v38-track';for(let i=0;i<4;i++)track.append(document.createElement('span'));
+    const panels=groups.map(()=>{const p=document.createElement('div');p.className='v38-panel';return p});
+    groups.forEach((g,i)=>g[1].forEach(id=>{const el=root.querySelector('#'+id);if(el)panels[i].append(el)}));
+    if(result)panels[3].append(result);
+    const summary=document.createElement('div');summary.className='v38-summary';
+    const controls=document.createElement('div');controls.className='v38-controls';const back=document.createElement('button');back.type='button';back.textContent='مرحله قبل';const next=document.createElement('button');next.type='button';next.className='v38-next';next.textContent='مرحله بعد';controls.append(back,next);
+    host.append(head,track,...panels,summary,controls);fields.replaceWith(host);
+    let step=0;
+    function refreshSummary(){
+      if(!summary)return;const type=service?.selectedOptions?.[0]?.textContent||'پروژه طراحی';const p=selectedPackage();const q=Math.max(1,parseInt(quantity?.value,10)||1);let t=type;
+      if(service?.value==='word')t+=` · پکیج ${names[p]} · ${q} صفحه`;else if(service?.value==='ppt')t+=` · پکیج ${names[p]} · ${q} اسلاید`;else if(service?.value==='ps')t+=' · '+(psType?.selectedOptions?.[0]?.textContent||'');
+      summary.textContent=t+' — مبلغ نمایش‌داده‌شده برآورد اولیه است و پس از بررسی فایل نهایی می‌شود.';
+    }
+    window.refreshSummary=refreshSummary;
+    function setStep(i){step=Math.max(0,Math.min(3,i));panels.forEach((p,j)=>p.hidden=j!==step);track.querySelectorAll('span').forEach((x,j)=>x.classList.toggle('on',j<=step));head.querySelector('.v38-stepname').textContent=groups[step][0];head.querySelector('.v38-counter').textContent=`مرحله ${step+1} از ۴`;back.disabled=step===0;next.textContent=step===3?'بازگشت به ویرایش':'مرحله بعد';refreshSummary();if(step===3)calc();}
+    next.addEventListener('click',()=>{if(step===3){setStep(1);return;}if(step===0&&!service.value)return;if(step===1&&service.value!=='ps'&&(!Number(quantity.value)||Number(quantity.value)<1)){quantity.focus();return;}setStep(step+1)});
+    back.addEventListener('click',()=>setStep(step-1));setStep(0);
+  }
+  // Initial state after the staged UI has moved fields.
+  syncFields();
+})();
+</script>
+
+<style id="v39-admin-css">
+.v39-admin-shell{display:none;position:fixed;inset:0;z-index:10000}.v39-admin-shell.open{display:block}.v39-admin-overlay{position:absolute;inset:0;background:#000c}.v39-admin{position:absolute;top:0;bottom:0;right:0;width:min(560px,100%);background:#0f0f17;border-left:1px solid #ffffff18;box-shadow:-25px 0 80px #0009;overflow:auto;transform:translateX(100%);transition:.28s}.v39-admin-shell.open .v39-admin{transform:none}.v39-admin-head{height:auto;padding:25px;border-bottom:1px solid #ffffff12;display:flex;justify-content:space-between;align-items:flex-start}.v39-admin-head h2{margin:8px 0 0}.v39-admin-close{width:40px;height:40px;border:1px solid #ffffff18;border-radius:50%;background:#ffffff08;color:white;font-size:24px;cursor:pointer}.v39-admin-body{padding:25px}.v39-admin-note{padding:14px;border:1px solid #c9ff5525;background:#c9ff5508;border-radius:15px;color:var(--muted);font-size:12px;line-height:2;margin-bottom:18px}.v39-admin-grid{display:grid;gap:15px}.v39-admin-grid label{display:grid;gap:8px;color:#ddd;font-size:12px;font-weight:700}.v39-admin-grid input,.v39-admin-grid textarea{width:100%;border:1px solid #ffffff18;background:#09090f;color:white;border-radius:13px;padding:13px;resize:vertical}.v39-admin-grid input:focus,.v39-admin-grid textarea:focus{outline:2px solid var(--lime);outline-offset:2px}.v39-admin-actions{display:flex;gap:10px;margin-top:20px}.v39-admin-actions .btn{flex:1}.admin-trigger{font-size:11px;padding:9px 13px!important}@media(max-width:620px){.v39-admin{width:100%}}
+</style>
+
+<script id="v39-core">
+(()=>{
+const q=s=>document.querySelector(s), qa=s=>document.querySelectorAll(s);
+const progress=q('#v39Progress'), toast=q('#v39Toast');
+const showToast=t=>{if(!toast)return;toast.textContent=t;toast.classList.add('show');clearTimeout(window.__v39toast);window.__v39toast=setTimeout(()=>toast.classList.remove('show'),2200)};
+addEventListener('scroll',()=>{if(progress){const d=document.documentElement.scrollHeight-innerHeight;progress.style.width=(d>0?scrollY/d*100:0)+'%'}},{passive:true});
+// Calculator messaging: keep existing Telegram data and generate Eitaa copy link when possible.
+const syncContacts=()=>{const tg=q('#quote'),ea=q('#quoteEitaa');if(!tg)return;const url=tg.href||'';if(ea){const text=decodeURIComponent((url.split('text=')[1]||'')).replace(/\+/g,' ');ea.href='https://eitaa.com/share?url=&text='+encodeURIComponent(text)}};
+qa('#quantity,#extra,#psType,#notes,#service,.pkg').forEach(el=>{el.addEventListener('input',()=>setTimeout(syncContacts,0));el.addEventListener('change',()=>setTimeout(syncContacts,0))});
+setTimeout(syncContacts,50);
+// Lightweight admin content store. Designed to map 1:1 to a future API payload.
+const panel=q('#adminPanel'),open=q('#adminOpen');
+const defaults={heroTitle:q('#adminHeroTitle')?.value||'',heroText:q('#adminHeroText')?.value||'',telegram:q('#adminTelegram')?.value||'@arshia1arshia',eitaa:q('#adminEitaa')?.value||'@ay_art'};
+let data={...defaults};try{data={...defaults,...JSON.parse(localStorage.getItem('arshiaArtContent')||'{}')} }catch{}
+const apply=()=>{const h=q('.hero h1'),p=q('.hero .hero-copy')||q('.hero p');if(h&&data.heroTitle)h.innerHTML=data.heroTitle; if(p&&data.heroText)p.textContent=data.heroText; const ai=q('#adminHeroTitle'),at=q('#adminHeroText'),tg=q('#adminTelegram'),ea=q('#adminEitaa');if(ai)ai.value=data.heroTitle;if(at)at.value=data.heroText;if(tg)tg.value=data.telegram;if(ea)ea.value=data.eitaa};
+apply();
+open?.addEventListener('click',()=>{panel?.classList.add('open');panel?.setAttribute('aria-hidden','false');q('#adminHeroTitle')?.focus()});
+qa('[data-admin-close]').forEach(x=>x.addEventListener('click',()=>{panel?.classList.remove('open');panel?.setAttribute('aria-hidden','true')}));
+addEventListener('keydown',e=>{if(e.key==='Escape')panel?.classList.remove('open')});
+q('#adminSave')?.addEventListener('click',()=>{data={heroTitle:q('#adminHeroTitle').value.trim(),heroText:q('#adminHeroText').value.trim(),telegram:q('#adminTelegram').value.trim(),eitaa:q('#adminEitaa').value.trim()};localStorage.setItem('arshiaArtContent',JSON.stringify(data));apply();showToast('تغییرات ذخیره شد')});
+q('#adminReset')?.addEventListener('click',()=>{localStorage.removeItem('arshiaArtContent');data={...defaults};apply();showToast('محتوا به حالت اولیه برگشت')});
+})();
+</script>
+</body></html>
